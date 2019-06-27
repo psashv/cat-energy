@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cat Energy</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="page-nav">
+      <div class="nav-base">
+        <div class="nav-base__item">logo</div>
+        <div class="nav-base__item">
+          <span class="nav-base__text">cat</span> energy
+        </div>
+        <div class="nav-base__item"></div>
+      </div>
+      <div class="nav-main">
+        <div class="nav-main__item">главная</div>
+        <div class="nav-main__item">каталог продукции</div>
+        <div class="nav-main__item">подбор программы</div>
+      </div>
+      </div>
+  </header>
+  <main class="page-main">
+    <section class="program">
+      <h1 class="program__title">Подбор программы</h1>
+      <p class="program__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__wrapper">
+          <div class="form__text field-text">
+            <label for="name" class="field-text__item">
+              <span class="field-text__desc">имя:*</span>
+              <input type="text" class="field-text__input" id="name" value="барсик">
+            </label>
+            <label for="weight" class="field-text__item">
+              <span class="field-text__desc">вес (кг):*</span>
+              <input type="text" class="field-text__input" id="weight" value="7">
+            </label>
+            <label for="age" class="field-text__item">
+              <span class="field-text__desc">возраст (лет):</span>
+              <input type="text" class="field-text__input" id="age" value="7">
+            </label>
+          </div>
+          <div class="form__radio field-radio">
+            <label for="lose-weight" class="field-radio__item">
+              <input type="radio" id="lose-weight" name="program" value="lw">
+              <span class="field-radio__desc">похудение</span>
+            </label>
+            <label for="gain-weight" class="field-radio__item">
+              <input type="radio" id="gain-weight" name="program" value="gw">
+              <span class="field-radio__desc">набор массы</span>
+            </label>
+            <label for="need-advice" class="field-radio__item">
+              <input type="radio" id="need-advice" name="program" value="na">
+              <span class="field-radio__desc">не знаю (нужен ваш совет)</span>
+            </label>
+          </div>
+        </div>
+        <div class="form__text field-text">
+          <h2 class="field-text__title">Контактные данные (владельца кота)</h2>
+          <label for="e-mail" class="field-text__item">
+            <span class="field-text__desc">e-mail:*</span>
+            <input type="email" class="field-text__input" id="e-mail" value="kuklachev@gmail.com">
+          </label>
+          <label for="phone" class="field-text__item">
+            <span class="field-text__desc">телефон:*</span>
+            <input type="text" class="field-text__input" id="phone" value="8 (960) 900-60-90">
+          </label>
+        </div>
+        <div class="form__comment field-comment">
+          <h2 class="field-comment__title">Комментарий</h2>
+          <textarea class="field-comment__text" id="comment">
+            расскажите обо всех повадках кота
+          </textarea>
+        </div>
+        <div class="form__extra field-extra">
+          <label for="sugar" class="field-extra__item">
+            <input type="checkbox" class="field-extra__input" id="sugar" value="sugar" checked>
+            <span class="field-extra__desc">сахарозаменитель</span>
+          </label>
+          <label for="water" class="field-extra__item">
+            <input type="checkbox" class="field-extra__input" id="water" value="water">
+            <span class="field-extra__desc">питьевая вода</span>
+          </label>
+          <label for="milk" class="field-extra__item">
+            <input type="checkbox" class="field-extra__input" id="milk" value="milk">
+            <span class="field-extra__desc">молоко</span>
+          </label>
+          <label for="vitamins" class="field-extra__item">
+            <input type="checkbox" class="field-extra__input" id="vitamins" value="vitamins">
+            <span class="field-extra__desc">витамины</span>
+          </label>
+        </div>
+        <div class="form__action field-action">
+          <input type="submit" class="field-action__button button" value="отправить заявку">
+          <span class="field-action__desc">* - Обязательные поля</span>
+        </div>
+      </form>
+    </section>
+    <section class="join-us">
+      <div class="join-us__info">
+        <h2 class="join-us__title">приглашаем<br> к сотрудничеству дилеров!</h2>
+        <div class="join-us__address">
+          <p class="join-us__text">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="join-us__text">Санкт-Петербург</p>
+        </div>
+      </div>
+      <img src="" alt="Наш офис" class="join-us__map">
+    </section>
+  </main>
+  <footer class="page-footer">
+    <ul class="page-footer__list">
+      <li class="page-footer__item"></li>
+      <li class="page-footer__item socials">
+        <div class="socials__item"></div>
+        <div class="socials__item"></div>
+        <div class="socials__item"></div>
+      </li>
+      <li class="page-footer__item"></li>
+    </ul>
+  </footer>
+</body>
+
+</html>
