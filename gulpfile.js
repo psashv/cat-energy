@@ -1,59 +1,43 @@
 const gulp = require('gulp');
-const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
-const uglify = require('gulp-uglify');
-const del = require('del');
 const browserSync = require('browser-sync').create();
+var sass = require('gulp-sass');
+// sass.compiler = require('node-sass');
 
-const cssFiles = [
-    './src/css/header.css',
-    './src/css/main.css'
+const scssFile = [
+    './source/sass/style.scss'
+]
+const cssFile = [
+    './source/css/style.css'
 ]
 
-const jsFiles = [
-  './src/js/lib.js',
-  './src/js/main.js'
-]
+gulp.task('sass', function () {
+  return gulp.src('./source/sass/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./source/css'))
+});
 
-function styles() {
-  return gulp.src(cssFiles)
-  .pipe(concat('style.css'))
+gulp.task('style', function () {
+  return gulp.src(cssFile)
   .pipe(autoprefixer({
     browsers: ['last 2 versions'],
     cascade: false
   }))
   .pipe(cleanCSS({level: 2}))
-  .pipe(gulp.dest('./build/css'))
+  .pipe(gulp.dest('./source/css'))
   .pipe(browserSync.stream());
-}
+});
 
-function scripts() {
-  return gulp.src(jsFiles)
-  .pipe(concat('script.js'))
-  .pipe(uglify({toplevel: true}))
-  .pipe(gulp.dest('./build/js'))
-  .pipe(browserSync.stream());
-}
-
-function clean() {
-  return del(['build/*'])
-}
-
-function watch() {
+gulp.task('watch', function () {
   browserSync.init({
     server: {
-      baseDir: "./"
+      baseDir: "./source"
     }
   });
-  gulp.watch('./src/css/**/*.css', styles)
-  gulp.watch('./src/js/**/*.js', scripts)
-  gulp.watch("./*html").on('change', browserSync.reload);
-}
+  gulp.watch('./source/sass/*.scss', gulp.series('build'));
+  gulp.watch("./source/*html").on('change', browserSync.reload);
+});
 
-gulp.task('styles', styles);
-gulp.task('scripts', scripts);
-gulp.task('del', clean);
-gulp.task('watch', watch);
-gulp.task('build', gulp.series(clean, gulp.parallel(styles, scripts)));
+gulp.task('build', gulp.series('sass', 'style'));
 gulp.task('dev', gulp.series('build', 'watch'));
