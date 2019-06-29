@@ -5,21 +5,14 @@ const browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 // sass.compiler = require('node-sass');
 
-const scssFile = [
-    './source/sass/style.scss'
-]
-const cssFile = [
-    './source/css/style.css'
-]
-
 gulp.task('sass', function () {
-  return gulp.src('./source/sass/*.scss')
+  return gulp.src('./source/sass/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./source/css'))
 });
 
 gulp.task('style', function () {
-  return gulp.src(cssFile)
+  return gulp.src('./source/css/style.css')
   .pipe(autoprefixer({
     browsers: ['last 2 versions'],
     cascade: false

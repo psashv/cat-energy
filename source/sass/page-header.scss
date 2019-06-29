@@ -1,0 +1,37 @@
+.page-header {
+  background-color: #ffffff;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  padding: 0 20px;
+
+  font-size: 0;
+}
+
+.page-header__nav {
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.page-header__link {
+  width: 320px;
+  padding: 24px 0;
+
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  color: #111111;
+
+  border-top: 1px solid #e6e6e6;
+}

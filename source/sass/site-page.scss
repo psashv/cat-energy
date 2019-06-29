@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswaldregular.woff2");
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswaldmedium.woff2");
+  font-weight: 500;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.site-page {
+  font-family: "Oswald", sans-serif;
+}
+
+.button {
+  justify-content: center;
+  align-items: center;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}

@@ -1,0 +1,42 @@
+.join-us {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.join-us__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 320px;
+  height: 114px;
+  padding: 0 20px;
+}
+
+.join-us__title {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 20px;
+  color: #111111;
+}
+
+.join-us__address {
+  margin-left: 7px;
+}
+
+.join-us__text {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.join-us__map {
+  display: block;
+  margin: 0 auto;
+}
+
