@@ -1,0 +1,45 @@
+.more {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.more__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  text-transform: none;
+  font-weight: 400;
+  line-height: 24px;
+  color: #111111;
+}
+
+.more__title::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 0;
+
+  width: 136px;
+  height: 3px;
+
+  background-color: #68b738;
+}
+
+.more__label {
+  margin-bottom: 13px;
+  padding-left: 45px;
+}
+
+.more__label:last-child {
+  margin-bottom: 0;
+}
+
+.more__input {
+  // WARNING
+  display: none;
+  // WARNING
+}
+

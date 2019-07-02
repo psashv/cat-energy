@@ -1,0 +1,79 @@
+.enter {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.enter__title {
+  width: 182px;
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  text-transform: none;
+  font-weight: 400;
+  line-height: 24px;
+  color: #111111;
+}
+
+.enter__title::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 0;
+
+  width: 99px;
+  height: 3px;
+
+  background-color: #68b738;
+}
+
+.enter__label {
+  margin-bottom: 14px;
+}
+
+.enter__label:last-child {
+  margin-bottom: 0;
+}
+
+.enter__text {
+  margin-right: 5px;
+}
+
+.enter__input {
+  box-sizing: border-box;
+  height: 45px;
+  padding: 15px;
+
+  border: 1px solid #cdcdcd;
+  opacity: 0.5;
+}
+
+.enter__input--name {
+  width: 229px;
+}
+
+.enter__input--weight {
+  width: 204px;
+}
+
+.enter__input--age {
+  width: 172px;
+}
+
+.enter__input--email {
+  width: 219px;
+}
+
+.enter__input--phone {
+  width: 204px;
+}
+
+.enter__input::placeholder {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 18px;
+  color: #444444;
+}

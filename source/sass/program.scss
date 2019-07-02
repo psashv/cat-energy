@@ -1,0 +1,53 @@
+.program {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 18px;
+  color: #222222;
+}
+
+.program__title {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  padding-left: 20px;
+
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 60px;
+  color: #111111;
+}
+
+.program__desc {
+  box-sizing: border-box;
+  width: 230px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding-left: 20px;
+
+  font-size: 14px;
+}
+
+.program__radio {
+  margin-top: 23px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.program__enter {
+  padding-left: 20px;
+}
+
+.program__comment {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.program__more {
+  margin-bottom: 34px;
+  padding-left: 20px;
+}

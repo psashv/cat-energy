@@ -1,0 +1,24 @@
+.radio {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 158px;
+
+  border: 1px solid #ededed;
+}
+
+.radio__label {
+  margin-bottom: 13px;
+  padding-left: 45px;
+}
+
+.radio__label:last-child {
+  margin-bottom: 0;
+}
+
+.radio__input {
+  // WARNING
+  display: none;
+  // WARNING
+}
