@@ -1,7 +1,9 @@
 .page-header {
-  background-color: #ffffff;
+  box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
+
+  background-color: #ffffff;
 }
 
 .page-header__main {
@@ -18,11 +20,10 @@
   display: flex;
   flex-direction: column;
 
-  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
 }
 
 .page-header__link {
-  width: 320px;
   padding: 24px 0;
 
   font-size: 20px;
@@ -33,5 +34,99 @@
   line-height: 20px;
   color: #111111;
 
-  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    width: $tablet-width;
+    margin-top: 24px;
+    margin-bottom: 60px;
+    padding: 0 30px;
+  }
+
+  .page-header__main {
+    padding: 0;
+  }
+
+  .page-header__icon {
+    display: none;
+  }
+
+  .page-header__icon--logo {
+    display: block;
+    content: url("../images/logo-tablet.png");
+  }
+
+  .page-header__nav {
+    flex-direction: row;
+    height: 45px;
+
+    border: none;
+  }
+
+  .page-header__link {
+    margin-right: 35px;
+    padding-bottom: 28px;
+
+    font-size: 18px;
+    font-weight: 400;
+    color: #222222;
+
+    border: none;
+  }
+
+  .page-header__link:last-child {
+    margin-right: 0;
+  }
+
+  .page-header__link--active {
+    border-bottom: 2px solid #68b738;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    position: relative;
+    z-index: 1;
+
+    width: 1440px;
+    margin-top: 54px;
+    margin-bottom: 110px;
+    padding: 0 110px;
+  }
+
+  .page-header--main::before {
+    position: absolute;
+    content: "";
+    top: -54px;
+    right: 0;
+    z-index: -1;
+
+    width: 720px;
+    height: 696px;
+
+    background: url("../images/index-background-desktop.png") no-repeat;
+  }
+
+  .page-header__icon--logo {
+    display: block;
+    content: url("../images/logo-desktop.png");
+  }
+
+  .page-header__link {
+    padding-bottom: 28px;
+
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+
+    border: none;
+  }
+
+  .page-header__link--active {
+    border-bottom: 2px solid #ffffff;
+  }
 }
