@@ -1,6 +1,7 @@
 .categories {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
   margin-bottom: 32px;
@@ -37,7 +38,7 @@
   width: 50px;
   height: 53px;
 
-  background: url("../images/lose-mobile.svg") no-repeat;
+  background: url("../images/lose-mobile.png") no-repeat;
 }
 
 .categories__item--gain::before {
@@ -47,7 +48,7 @@
   width: 67px;
   height: 50px;
 
-  background: url("../images/gain-mobile.svg") no-repeat;
+  background: url("../images/gain-mobile.png") no-repeat;
 }
 
 .categories__title {
@@ -104,4 +105,146 @@
 
 .categories__link--pro::after {
   right: -14px;
+}
+
+@media (min-width: $tablet-width) {
+  .categories {
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 51px;
+  }
+
+  .categories__item {
+    width: 708px;
+    height: 372px;
+    padding-top: 80px;
+    padding-left: 52px;
+  }
+
+  .categories__item--lose {
+    margin-bottom: 30px;
+  }
+
+  .categories__item--lose::before {
+    top: 80px;
+    left: 446px;
+
+    width: 200px;
+    height: 212px;
+
+    background: url("../images/lose-tablet.png") no-repeat;
+  }
+
+  .categories__item--gain::before {
+    top: 91px;
+    left: 412px;
+
+    width: 268px;
+    height: 200px;
+
+    background: url("../images/gain-tablet.png") no-repeat;
+  }
+
+  .categories__title {
+    margin: 0;
+    margin-bottom: 26px;
+    padding-left: 0;
+
+    font-size: 36px;
+    line-height: 36px;
+    color: #111111;
+  }
+
+  .categories__desc {
+    box-sizing: border-box;
+    width: 372px;
+    height: 88px;
+    margin: 0;
+    margin-bottom: 60px;
+
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #444444;
+
+    border: none;
+  }
+
+  .categories__desc--gain {
+    width: 341px;
+  }
+
+  .categories__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .categories__link::after {
+    top: -2px;
+  }
+
+  .categories__link--slim::after {
+    right: -25px;
+  }
+
+  .categories__link--pro::after {
+    right: -23px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1440px;
+    margin-bottom: 79px;
+    padding: 0 110px;
+  }
+
+  .categories__item {
+    width: 570px;
+    margin: 0;
+  }
+
+  .categories__item--lose {
+    margin-bottom: 0;
+  }
+
+  .categories__item--lose::before {
+    top: 41px;
+    left: 52px;
+
+    width: 100px;
+    height: 106px;
+
+    background: url("../images/lose-desktop.png") no-repeat;
+  }
+
+  .categories__item--gain::before {
+    top: 47px;
+    left: 34px;
+
+    width: 134px;
+    height: 100px;
+
+    background: url("../images/gain-desktop.png") no-repeat;
+  }
+
+  .categories__title {
+    margin: 0;
+    margin-bottom: 80px;
+    padding-left: 164px;
+
+    font-size: 36px;
+    line-height: 36px;
+    color: #111111;
+  }
+
+  .categories__desc {
+    box-sizing: border-box;
+    width: 462px;
+    height: 64px;
+    margin: 0;
+    margin-bottom: 36px;
+  }
 }

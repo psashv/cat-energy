@@ -121,12 +121,20 @@
 
     font-size: 20px;
     font-weight: 400;
-    color: #ffffff;
+    color: #111111;
 
     border: none;
   }
 
   .page-header__link--active {
+    border-bottom: 2px solid #68b738;
+  }
+
+  .page-header__link--main {
+    color: #ffffff;
+  }
+
+  .page-header__link--main-active {
     border-bottom: 2px solid #ffffff;
   }
 }
