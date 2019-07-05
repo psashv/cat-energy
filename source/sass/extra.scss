@@ -40,12 +40,6 @@
   margin: 0 auto;
   padding-top: 14px;
 
-  border: 0.5px solid #cdcdcd;
-  border-left: 0;
-  border-right: 0;
-}
-
-.extra__item:first-child {
   border-top: 1px solid #cdcdcd;
 }
 
@@ -108,3 +102,167 @@
   color: #ffffff;
 }
 
+@media (min-width: $tablet-width) {
+  .extra {
+    width: 768px;
+    padding: 0 30px;
+    padding-bottom: 76px;
+  }
+
+  .extra__title {
+    margin: 0;
+    margin-bottom: 75px;
+    margin-left: 37px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .extra__title::after {
+    content: url("../images/extra-line.png");
+    top: -9px;
+    right: -30px;
+    z-index: -1;
+
+    width: 768px;
+
+    background-color: #ffffff;
+  }
+
+  .extra__wrapper {
+    margin-bottom: 69px;
+  }
+
+  .extra__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 708px;
+    height: 140px;
+    padding-top: 28px;
+    padding-left: 38px;
+    padding-right: 37px;
+
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
+  }
+
+  .extra__subtitle {
+    width: 165px;
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .extra__info {
+    width: auto;
+    margin-bottom: 0;
+
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .extra__text:first-child {
+    margin-right: 50px;
+  }
+
+  .extra__button {
+    width: 633px;
+  }
+
+  .extra__slogan {
+    align-items: center;
+  }
+
+  .extra__image {
+    content: url("../images/extra-tablet.png");
+
+    width: 708px;
+    height: 200px;
+  }
+
+  .extra__desc {
+    bottom: auto;
+    right: 125px;
+
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1440px;
+    padding: 0 110px;
+    padding-bottom: 86px;
+  }
+
+  .extra__title {
+    width: 1440px;
+    margin-left: 0;
+  }
+
+  .extra__title::after {
+    content: url("../images/extra-line-desktop.png");
+    top: -9px;
+    right: -110px;
+    z-index: -1;
+
+    width: 1440px;
+
+    background-color: #ffffff;
+  }
+
+  .extra__wrapper {
+    margin-bottom: 0;
+  }
+
+  .extra__item {
+    align-items: center;
+    width: 895px;
+    height: 72px;
+    padding: 0;
+
+    border-left: none;
+    border-right: none;
+  }
+
+  .extra__item:last-child {
+    height: 73px;
+  }
+
+  .extra__subtitle {
+    margin: 0;
+  }
+
+  .extra__info {
+    width: 290px;
+  }
+
+  .extra__text:first-child {
+    margin-right: 0;
+  }
+
+  .extra__button {
+    width: 245px;
+    height: 40px;
+  }
+
+  .extra__image {
+    content: url("../images/extra-desktop.png");
+
+    width: 245px;
+    height: 289px;
+  }
+
+  .extra__desc {
+    bottom: 43px;
+    right: auto;
+
+    text-align: center;
+  }
+}
