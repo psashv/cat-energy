@@ -3,7 +3,6 @@
 
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
 }
 
 .enter__title {
@@ -31,11 +30,43 @@
 }
 
 .enter__label {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
   margin-bottom: 14px;
 }
 
 .enter__label:last-child {
   margin-bottom: 0;
+}
+
+.enter__label--email::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  display: block;
+  width: 17px;
+  height: 13px;
+
+  background: url("../images/mail.png") no-repeat;
+}
+
+.enter__label--phone::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 13px;
+
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  background: url("../images/phone.png") no-repeat;
 }
 
 .enter__text {
@@ -47,8 +78,7 @@
   height: 45px;
   padding: 15px;
 
-  border: 1px solid #cdcdcd;
-  opacity: 0.5;
+  border: 1px solid #e6e6e6;
 }
 
 .enter__input--name {
@@ -76,4 +106,132 @@
   text-transform: uppercase;
   line-height: 18px;
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .enter {
+    overflow: hidden;
+  }
+
+  .enter__title {
+    width: auto;
+    margin-bottom: 70px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .enter__title::after {
+    content: url("../images/header_line.png");
+    top: -10px;
+    right: auto;
+    left: -40px;
+    z-index: -1;
+
+    width: 1440px;
+    height: 3px;
+
+    background-color: #ffffff;
+  }
+
+  .enter__label {
+    width: 631px;
+    margin-bottom: 20px;
+  }
+
+  .enter__label--email::after {
+    top: 20px;
+    right: 21px;
+  }
+
+  .enter__label--phone::after {
+    top: 17px;
+    right: 17px;
+  }
+
+  .enter__text {
+    margin-right: 10px;
+  }
+
+  .enter__input {
+    height: 52px;
+    padding: 17px;
+  }
+
+  .enter__input--name {
+    width: 567px;
+  }
+
+  .enter__input--weight {
+    width: 536px;
+  }
+
+  .enter__input--age {
+    width: 497px;
+  }
+
+  .enter__input--email {
+    width: 551px;
+  }
+
+  .enter__input--phone {
+    width: 535px;
+  }
+
+  .enter__input::placeholder {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .enter--line {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .enter__title {
+    width: 1200px;
+  }
+
+  .enter__title::after {
+    left: 0;
+  }
+
+  .enter__label {
+    width: 570px;
+  }
+
+  .enter__label--email {
+    margin-bottom: 0;
+    margin-right: 80px;
+  }
+
+  .enter__label--email::after {
+    right: 20px;
+  }
+
+  .enter__label--phone::after {
+    right: 19px;
+  }
+
+  .enter__input--name {
+    width: 506px;
+  }
+
+  .enter__input--weight {
+    width: 475px;
+  }
+
+  .enter__input--age {
+    width: 436px;
+  }
+
+  .enter__input--email {
+    width: 486px;
+  }
+
+  .enter__input--phone {
+    width: 472px;
+  }
 }

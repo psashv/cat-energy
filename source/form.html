@@ -32,7 +32,7 @@
     <section class="program">
       <h1 class="program__title">Подбор программы</h1>
       <p class="program__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <form class="program__form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="program__form" method="post" action="https://echo.htmlacademy.ru">
         <div class="program__wrapper">
           <div class="program__enter enter">
             <label class="enter__label" for="name">
@@ -50,26 +50,29 @@
           </div>
           <div class="program__radio radio">
             <label class="radio__label" for="lose-weight">
-              <input class="radio__input" type="radio" id="lose-weight" name="program" value="lw">
+              <input class="radio__input" type="radio" id="lose-weight" name="program" value="lw" checked>
+              <div class="radio__action"></div>
               <span class="radio__text">похудение</span>
             </label>
             <label class="radio__label" for="gain-weight">
               <input class="radio__input" type="radio" id="gain-weight" name="program" value="gw">
+              <div class="radio__action"></div>
               <span class="radio__text">набор массы</span>
             </label>
             <label class="radio__label" for="need-advice">
               <input class="radio__input" type="radio" id="need-advice" name="program" value="na">
+              <div class="radio__action"></div>
               <span class="radio__text">не знаю (нужен ваш совет)</span>
             </label>
           </div>
         </div>
-        <div class="program__enter enter">
+        <div class="program__enter enter enter--line">
           <h2 class="enter__title">Контактные данные (владельца кота)</h2>
-          <label class="enter__label" for="e-mail">
+          <label class="enter__label enter__label--email" for="e-mail">
             <span class="enter__text">e-mail:*</span>
             <input class="enter__input enter__input--email" type="email" id="e-mail" placeholder="kuklachev@gmail.com">
           </label>
-          <label class="enter__label" for="phone">
+          <label class="enter__label enter__label--phone" for="phone">
             <span class="enter__text">телефон:*</span>
             <input class="enter__input enter__input--phone" type="text" id="phone" placeholder="8 (960) 900-60-90"
               pattern="\d*">
@@ -81,20 +84,24 @@
         </div>
         <div class="program__more more">
           <h2 class="more__title">Дополнительно</h2>
-          <label for="sugar" class="more__label">
+          <label class="more__label" for="sugar">
             <input class="more__input" type="checkbox" id="sugar" value="sugar" checked>
+            <div class="more__action"></div>
             <span class="more__text">сахарозаменитель</span>
           </label>
-          <label for="water" class="more__label">
+          <label class="more__label" for="water">
             <input class="more__input" type="checkbox" id="water" value="water">
+            <div class="more__action"></div>
             <span class="more__text">питьевая вода</span>
           </label>
-          <label for="milk" class="more__label">
+          <label class="more__label" for="milk">
             <input class="more__input" type="checkbox" id="milk" value="milk">
+            <div class="more__action"></div>
             <span class="more__text">молоко</span>
           </label>
-          <label for="vitamins" class="more__label">
+          <label class="more__label" for="vitamins">
             <input class="more__input" type="checkbox" id="vitamins" value="vitamins">
+            <div class="more__action"></div>
             <span class="more__text">витамины</span>
           </label>
         </div>

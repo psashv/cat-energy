@@ -29,17 +29,121 @@
 }
 
 .more__label {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  height: 30px;
   margin-bottom: 13px;
-  padding-left: 45px;
+
+  cursor: pointer;
 }
 
 .more__label:last-child {
   margin-bottom: 0;
 }
 
+.more__input:checked + .more__action::after {
+  display: block;
+}
+
 .more__input {
-  // WARNING
+  position: absolute;
+
+  height: 0;
+  width: 0;
+
+  opacity: 0;
+  cursor: pointer;
+}
+
+.more__action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+}
+
+.more__action::after {
+  content: "";
+
   display: none;
-  // WARNING
+  width: 21px;
+  height: 16px;
+
+  background: url("../images/tick.png") no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .more {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 1px;
+  }
+
+  .more__title {
+    box-sizing: border-box;
+    width: 500px;
+    margin-bottom: 53px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .more__title::after {
+    content: url("../images/more_line.png");
+    top: -10px;
+    right: auto;
+    left: -40px;
+    z-index: -1;
+
+    width: 1440px;
+    height: 3px;
+
+    background-color: #ffffff;
+  }
+
+  .more__label {
+    box-sizing: border-box;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 0;
+    margin-right: 94px;
+  }
+
+  .more__label:nth-child(2) {
+    margin-bottom: 32px;
+  }
+
+  .more__action {
+    width: 40px;
+    height: 40px;
+    margin-right: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .more__title {
+    width: 1200px;
+  }
+
+  .more__title::after {
+    left: 0;
+  }
+
+  .more__label {
+    margin-right: 75px;
+  }
+
+  .more__label:nth-child(2) {
+    margin-bottom: 0;
+  }
 }
 
