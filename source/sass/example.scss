@@ -143,22 +143,22 @@
 
   .example__title {
     margin: 0;
-    margin-top: 51px;
-    margin-bottom: 60px;
-    padding: 0 30px;
+    margin-top: 47px;
+    margin-bottom: 62px;
+    padding: 0 32px;
 
     font-size: 60px;
     line-height: 60px;
   }
 
   .example__wrapper {
-    margin-bottom: 241px;
-    padding: 0 30px;
+    margin-bottom: 255px;
+    padding: 0 32px;
   }
 
   .example__desc {
     width: 680px;
-    margin-bottom: 55px;
+    margin-bottom: 52px;
 
     font-size: 16px;
     line-height: 24px;
@@ -175,8 +175,8 @@
   }
 
   .example__item {
-    width: 162px;
-    height: 72px;
+    width: 160px;
+    height: 70px;
   }
 
   .example__item:first-child {
@@ -208,7 +208,7 @@
   }
 
   .example__act {
-    top: 65px;
+    top: 63px;
     z-index: 2;
 
     width: 127px;
@@ -256,7 +256,7 @@
   .example__image {
     position: absolute;
     content: url("../images/example-tablet.png");
-    left: 46px;
+    left: 48px;
     bottom: 114px;
     z-index: 2;
 
@@ -267,7 +267,7 @@
 
   .example__slider {
     position: relative;
-    bottom: 67px;
+    bottom: 61px;
     z-index: 2;
 
     align-items: center;
@@ -280,6 +280,7 @@
 
     width: 428px;
     height: 42px;
+    margin-left: 6px
   }
 
   .example__text {

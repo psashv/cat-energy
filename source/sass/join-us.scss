@@ -58,6 +58,7 @@
   .join-us__title {
     width: 156px;
     margin: 0;
+    margin-left: 3px;
 
     font-size: 20px;
     line-height: 25px;
@@ -111,7 +112,7 @@
 
   .join-us__map {
     content: url("../images/map.png");
-    
+
     width: 1440px;
     height: 400px;
   }

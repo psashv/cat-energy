@@ -111,14 +111,15 @@
   .categories {
     width: 768px;
     margin: 0 auto;
-    margin-bottom: 51px;
+    margin-bottom: 48px;
   }
 
   .categories__item {
     width: 708px;
     height: 372px;
-    padding-top: 80px;
-    padding-left: 52px;
+    margin-left: 32px;
+    padding-top: 79px;
+    padding-left: 53px;
   }
 
   .categories__item--lose {
@@ -147,7 +148,7 @@
 
   .categories__title {
     margin: 0;
-    margin-bottom: 26px;
+    margin-bottom: 23px;
     padding-left: 0;
 
     font-size: 36px;
@@ -160,7 +161,8 @@
     width: 372px;
     height: 88px;
     margin: 0;
-    margin-bottom: 60px;
+    margin-left: -1px;
+    margin-bottom: 66px;
 
     font-family: "Arial", sans-serif;
     font-size: 16px;
@@ -184,11 +186,11 @@
   }
 
   .categories__link--slim::after {
-    right: -25px;
+    right: -23px;
   }
 
   .categories__link--pro::after {
-    right: -23px;
+    right: -22px;
   }
 }
 

@@ -19,7 +19,7 @@
 }
 
 .page-footer__site-logo {
-  margin: 30px 0;
+  margin: 33px 0;
 }
 
 .page-footer__item--social {
@@ -34,6 +34,7 @@
   justify-content: space-between;
   align-items: center;
   width: 125px;
+  margin-right: 10px;
 
   font-size: 0;
 }
@@ -68,6 +69,14 @@
 
   .page-footer__site-logo {
     margin: 0;
+    margin-top: -2px;
+    margin-left: 3px;
+  }
+
+  .page-footer__wrapper {
+    width: 124px;
+    margin-right: -18px;
+    margin-top: -6px;
   }
 
   .page-footer__item--social {
@@ -97,13 +106,10 @@
     height: 28px;
   }
 
-  .page-footer__wrapper {
-    width: 124px;
-  }
-
   .page-footer__item--us {
     width: 163;
     margin: 0;
+    margin-top: -6px;
   }
 
   .page-footer__text {

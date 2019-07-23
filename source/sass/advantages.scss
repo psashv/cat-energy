@@ -59,8 +59,8 @@
 @media (min-width: $tablet-width) {
   .advantages {
     width: 768px;
-    margin-bottom: 50px;
-    padding: 0 30px;
+    margin-bottom: 0;
+    padding: 0 32px;
     padding-bottom: 35px;
 
     border-bottom: 1px solid #e6e6e6;
@@ -68,7 +68,7 @@
 
   .advantages__title {
     margin: 0;
-    margin-bottom: 66px;
+    margin-bottom: 69px;
 
     font-size: 60px;
     line-height: 60px;
@@ -114,8 +114,8 @@
   }
 
   .advantages__item:nth-child(1)::after {
-    top: -2px;
-    left: 124px;
+    top: 0;
+    left: 126px;
     content: "";
 
     width: 71px;
@@ -126,7 +126,7 @@
 
   .advantages__item:nth-child(2)::after {
     top: -2px;
-    left: 124px;
+    left: 122px;
     content: "";
 
     width: 114px;
@@ -159,7 +159,7 @@
 
   .advantages__desc {
     width: 250px;
-    padding-top: 115px;
+    padding-top: 112px;
     padding-left: 0;
 
     font-size: 16px;
